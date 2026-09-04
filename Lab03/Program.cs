@@ -42,5 +42,14 @@ class Program
         double hpPercentExact = currentHpDouble = 100 / maxHp;
         Console.WriteLine($"HP Percent (exact): {hpPercentExact}%");
         
+        Console.WriteLine("\n---- Explicit Cast: Attack Power -> Display Int -----");
+        int attackDisplay = (int)attackPower;
+        Console.WriteLine($"Attack Power (int cast): {attackDisplay}");
+
+        Console.WriteLine("\n---- Cast vs Convert: Crit Multiplier -----");
+        int CritCast = (int)critMultiplier;
+        Console.WriteLine($"Crit Multiplier (int cast): {CritCast}");
+        int critConvert = Convert.ToInt32(critMultiplier); 
+        Console.WriteLine($"Crit Multiplier (Convert rounded): {critConvert}");
     }
 }
