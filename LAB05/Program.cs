@@ -49,6 +49,6 @@ Console.WriteLine($"Counter attack deals: {counterDamage} DMG");
 Random randomSomething = new Random();
 int roll = randomSomething.Next(1,101);
 bool isCrit = roll <= 10;
-int critDamage = normalDamage + Convert.ToInt32(isCrit) * normalDamage;
+int critDamage = normalDamage * Convert.ToInt32(isCrit) + normalDamage;
 Console.WriteLine($"Crit Damage roll: {roll} (Crit?: {isCrit})");
 Console.WriteLine($"If critical, normal attack would deal: {critDamage} DMG");
