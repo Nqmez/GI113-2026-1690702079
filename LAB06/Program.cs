@@ -66,7 +66,7 @@ namespace Lab06
             else
             {
                 Console.WriteLine($"{Uma} ran away from {Rival}.");
-                Console.WriteLine("T.M. Opera O Gets away safely.");
+                Console.WriteLine($"{Uma} Gets away safely.");
             }
         }
     }
