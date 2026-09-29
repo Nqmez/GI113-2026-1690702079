@@ -26,7 +26,11 @@ namespace Lab06
 
             Console.WriteLine($"[[--{GameTitle}--]]");
             Console.WriteLine($"{Uma} HP: {UmaHp}/{UmaMaxHp} | ATK: {AttackPower} | {Rival} HP: {RivalHp}");
-            Console.WriteLine("1: ATTACK  2: USE POTION  3: RUN");
+            Console.WriteLine("=============================");
+            Console.WriteLine("1: ATTACK");
+            Console.WriteLine("2: USE POTION");
+            Console.WriteLine("3: RUN");
+            Console.WriteLine("=============================");
             Console.Write("CHOOSE YOUR ACTION (1 - 3): ");
             bool isInputValid = int.TryParse(Console.ReadLine(), out int choice);
 
