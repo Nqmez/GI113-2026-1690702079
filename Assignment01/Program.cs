@@ -30,7 +30,7 @@ namespace Assignment1
             int staminaRounded = Convert.ToInt32(StaminaBonus);
 
             Console.WriteLine("╔══════════════════════════════════════════════╗");
-            Console.WriteLine("║          UMAMUSUME PRETTY DERBY              ║");
+            Console.WriteLine($"║            {GameTitle,-30}    ║");
             Console.WriteLine("║                 ID CARD                      ║");
             Console.WriteLine("╠══════════════════════════════════════════════╣");
             Console.WriteLine($"║  Name       : {UmaName,-30} ║");
@@ -45,7 +45,7 @@ namespace Assignment1
             Console.WriteLine("╠══════════════════════════════════════════════╣");
             Console.WriteLine("║              TYPE CONVERSIONS                ║");
             Console.WriteLine("╠══════════════════════════════════════════════╣");
-            Console.WriteLine($"║  Level → double (implicit): {FriendShipLevelAsDouble,-14}   ║");
+            Console.WriteLine($"║  Level → double (implicit): {FriendShipLevelAsDouble,-14}    ║");
             Console.WriteLine($"║  Stamina cast (truncates): {staminaTruncated,-15}   ║");
             Console.WriteLine($"║  Stamina Convert (rounds): {staminaRounded,-15}   ║");
             Console.WriteLine("╚══════════════════════════════════════════════╝");

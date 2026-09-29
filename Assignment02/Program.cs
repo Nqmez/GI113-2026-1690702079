@@ -6,9 +6,10 @@
  * Course     : GI113 Computer Programming (GI)
  */
 
-internal class Program
+ namespace assignment02;
+class Program
 {
-    private static void Main(string[] args)
+    static void Main(string[] args)
     {
         Console.WriteLine("==================================");
         Console.WriteLine("=== >> Welcome To Minecraft << ===");

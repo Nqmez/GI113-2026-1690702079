@@ -6,10 +6,11 @@
  * Course     : GI113 Computer Programming (GI)
  */
 
+ namespace LAB04;
 
-internal class Program
+class Program
 {
-    private static void Main(string[] args)
+    static void Main(string[] args)
     {
         //--Character Creation Logic
 

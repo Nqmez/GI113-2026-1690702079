@@ -6,9 +6,10 @@
  * Course     : GI113 Computer Programming (GI)
  */
 
-internal class Program
+ namespace LAB05;
+class Program
 {
-    private static void Main(string[] args)
+    static void Main(string[] args)
     {
         Console.WriteLine("=== >> GAME TITILE << ===");
         Console.WriteLine("Hero VS. Monster -- Calculate Damage");
