@@ -17,7 +17,7 @@ internal class Program
         Console.WriteLine("|      CHARACTER CREATION       |");
         Console.WriteLine("+------------------------------+");
         Console.Write("Name your character: ");
-        string charName = Console.ReadLine();
+        string? charName = Console.ReadLine();
         Console.Write("Choose a class (1-3): ");
         bool classOk = int.TryParse(Console.ReadLine(), out int classNum);
         Console.Write("Starting luck (0.0-10.0): ");
@@ -57,7 +57,7 @@ internal class Program
         Console.WriteLine("|         NEW SAVE FILE         |");
         Console.WriteLine("+------------------------------+");
         Console.Write("Enter save name: ");
-        string saveName = Console.ReadLine();
+        string saveName = Console.ReadLine() ?? string.Empty;
         Console.Write("Choose save slot (1-3): ");
         bool slotOk = int.TryParse(Console.ReadLine(), out int slot);
         Console.WriteLine($"Save name: {saveName}");

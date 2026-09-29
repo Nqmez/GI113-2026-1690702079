@@ -24,14 +24,14 @@ internal class Program
         double SalvageRate = 0.3;
         double Maxbatch = 500;
         Console.Write("=> Choose Menu: ");
-        string choice = Console.ReadLine();
+        string? choice = Console.ReadLine();
         char.TryParse(choice, out char choiceChar);
 
         if (choiceChar == 'S' || choiceChar == 's')
         {
             Console.WriteLine("You chose to Smelt.");
             Console.WriteLine($"Enter the number of {Ore} to smelt: ");
-            string itemCountInput = Console.ReadLine();
+            string? itemCountInput = Console.ReadLine();
             if (double.TryParse(itemCountInput, out double itemCount))
             {
                 if (itemCount > 0 && itemCount <= Maxbatch)
@@ -59,7 +59,7 @@ internal class Program
         {
             Console.WriteLine("You chose to Salvage.");
             Console.WriteLine($"Enter the number of {Ingot} to salvage: ");
-            string itemCountInput = Console.ReadLine();
+            string? itemCountInput = Console.ReadLine();
             if (double.TryParse(itemCountInput, out double itemCount))
             {
                 if (itemCount > 0 && itemCount <= Maxbatch)
