@@ -41,7 +41,7 @@ namespace Lab06
             else if (choice == 1)
             {
                 Random random = new Random();
-                int roll = random.Next(1, 50);
+                int roll = random.Next(1, 51);
                 bool isCritical = roll <= 10;
                 int damage = AttackPower;
                 if (isCritical)
